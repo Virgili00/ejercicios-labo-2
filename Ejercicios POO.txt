@@ -1,0 +1,10 @@
+1-Implementar una clase Animal, e implementar el metodo hacerRuido, de diferentes formas para cada Animal
+Gato = "Miau!"
+Perro = que repita 2 veces "guau" 
+Loro = pedir al usuario y una palabra y que la repita
+2-Desarrollar una cuenta bancaria la misma podra, agregar saldo y extraer saldo(no se puede extraer saldo mayor al disponible)
+3-Desarrollar una calculadora que sume,reste,divida y multiplique que pueda recibir hasta 4 numeros por operacion(sobrecarga)
+4-se debera modelar las clases Persona y Zombie, y en el destructor de Persona instanciar un zombie que debe tener un metodo
+que imprima en pantalla nombrePersona: "cerebrooo!"
+(para que el ejercicio funcione debe instanciarse la persona en el heap(memoria dinamica) y liberarla)
+5-Implementar la clase Señora y paloma, donde la Señora les de comida a las palomas y ellas recarguen energia.

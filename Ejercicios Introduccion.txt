@@ -1,7 +1,7 @@
 0.Escribir un "hello world" en c++
 1.Desarrollar una calculadora que tome 2 valores y los sume,divida,reste o multiplique
 2.Escribir un programa que muestre el eco de todo lo que el usuario introduzca hasta que el usuario escriba “salir” que terminará.
-3.Escribe un programa que pida el limite inferior y superior de un intervalo.  
+3.Escribe un programa que pida el limite inferior y superior de un intervalo.
 Si el límite inferior es mayor que el superior lo tiene que volver a pedir.  
 A continuación se van introduciendo números hasta que introduzcamos el 0. 
 Cuando termine el programa dará las siguientes informaciones
@@ -18,3 +18,4 @@ Escribí un programa que:
 - Los almacene en un array (vector).
 - Ordene el array de menor a mayor.
 - Muestre el contenido del array ordenado.
+7.Sumar elementos de un vector.
