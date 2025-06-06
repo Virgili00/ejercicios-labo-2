@@ -13,7 +13,10 @@ class Auto {
             this->modelo = modelo;
             this->color = color;
         }
+
+        
         void cambiarColor (std::string nuevoColor) {
+            color = nuevoColor;
             std::cout << "El color del auto " << marca << " " << modelo << " ha cambiado a " << nuevoColor << "." << std::endl;
         }
         void arrancar () {

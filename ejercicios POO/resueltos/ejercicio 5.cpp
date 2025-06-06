@@ -1,7 +1,6 @@
 /*
 5-Implementar la clase Señora y Ave, donde la Señora les de comida a las Aves y ellas recarguen energia.
 */
-
 #include <iostream>
 #include <string>
 class Ave {
@@ -39,9 +38,9 @@ public:
 };
 
 int main() {
-    Senora senora("Doña Rosa");
-    Ave ave1("Aguilucho");
-    Ave ave2("Hornero");
+    Senora senora = Senora("Doña Rosa");
+    Ave ave1= Ave("Aguilucho");
+    Ave ave2 = Ave("Hornero");
 
     senora.darComida(ave1, 10);
     senora.darComida(ave2, 15);

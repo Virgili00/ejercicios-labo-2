@@ -17,8 +17,9 @@ public:
 class Animal {
 private:
     std::string nombre;
-public:
     int energia;
+public:
+    
 
     Animal(std::string nombre): nombre(nombre), energia(0){
     }
@@ -43,7 +44,6 @@ public:
 class Perro : public Animal {
 private:
     std::string nombre;
-
 public:
     Perro(std::string nombre) :  Animal(nombre) {}
 
@@ -76,12 +76,13 @@ class Senora {
 private:
     std::string nombre;
 public:
+    //Esta es una forma de inicializar un vector con 2 elementos ya cargados
     std::vector<Comida> comidas {Comida(2,"pan"),Comida(1,"chocolate")};
     Senora(std::string nombre) : nombre(nombre) {}
 
-    void darComida(Animal& Animal,int tipo) {
-        std::cout << nombre << " le da " << " comida a " << Animal.getNombre() << "." << std::endl;
-        Animal.comer(comidas.at(tipo));
+    void darComida(Animal& animal,int tipo) {
+        std::cout << nombre << " le da " << " comida a " << animal.getNombre() << "." << std::endl;
+        animal.comer(comidas.at(tipo));
     }
 };
 
@@ -94,13 +95,10 @@ int main() {
 
     senora.darComida(ozzy,1);
     senora.darComida(pajarito,0);
+    senora.darComida(pajarito,0);
 
-    // for(size_t i = 0; i < senora.comidas.size();i++){
-    //      std::cout << senora.comidas.at(i).tipo;
-    // }
-
-
-
-
+    for(size_t i = 0; i < senora.comidas.size();i++){
+         std::cout << senora.comidas.at(i).tipo;
+    }
     return 0;
 }

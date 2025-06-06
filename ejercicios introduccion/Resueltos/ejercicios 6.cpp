@@ -9,7 +9,8 @@ Escribí un programa que:
 #include <iostream>
 #include <vector>
 void mostrarVector(const std::vector<int> numeros);
-
+//Importante declarar que vamos a recibir una referencia para poder 
+//modificar la variable numeros que le estamos pasando
 void ordenarVector(std::vector<int>& numeros) {
     for (int i = 0; i < numeros.size() - 1; ++i) {
         for (int j = i + 1; j < numeros.size(); ++j) {
