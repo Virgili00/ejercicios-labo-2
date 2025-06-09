@@ -4,6 +4,17 @@ class Auto {
 
 };
 
+void forVector(){
+    std::vector<int> vectorEnteros5 {1, 2, 3, 4, 5}; //Crea un vector de enteros con los valores especificados
+    //Es importante que i sea de tipo size_t ya que es el tipo de dato que se utiliza para los índices de los vectores
+    //y es un tipo de dato sin signo, lo que significa que no puede ser negativo.
+    //Esto es importante para evitar errores de compilación o ejecución al intentar acceder a un índice negativo.
+    
+    for (size_t i = 0; i < vectorEnteros5.size(); ++i) {
+        std::cout << vectorEnteros5[i] << " ";
+    }
+}
+
 int main(){
 std::vector<int> vectorEnteros;
 std::vector<int> vectorEnteros2(5); //Crea un vector de enteros con 5 elementos, inicializados a 0
